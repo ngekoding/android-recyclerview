@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:clickable="true"
+    android:id="@+id/cont_item_root">
+
+    <ImageView
+        android:id="@+id/iv_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_local_florist_black_48dp" />
+
+    <TextView
+        android:id="@+id/tv_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_item_icon"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="56dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="56dp"
+        android:text="Lorem ipsum"
+        android:textSize="14sp"
+        android:maxLines="1"/>
+
+    <ImageView
+        android:id="@+id/iv_item_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:padding="16dp"
+        android:src="@drawable/ic_star_border_black_24dp" />
+
+</RelativeLayout>
